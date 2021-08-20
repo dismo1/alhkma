@@ -178,7 +178,7 @@ body {
 /*  End header */
 /* Start about */
 .about {
-  margin-top: -200px;
+  margin-top: -205px;
   position: relative;
   z-index: 1;
   padding-top: 10px;
@@ -475,6 +475,10 @@ body {
 .students .container .search #table  div {
   display: grid;
   grid-template-columns: repeat(8,1fr);
+}
+
+.students .container .search #table  div span {
+  font-size: 12px;
 }
 
 @media (max-width: 767px) {
