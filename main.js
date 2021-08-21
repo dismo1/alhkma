@@ -40,8 +40,13 @@ if (level === 'الرابع الاعدادي') {
 else {
   document.getElementById('secondaryBranch').style["display"] = 'block';
   }
+  
+if (level === 'الخامس الاعدادي' && sbranch === 'الفرع التطبيقي') {
+  document.getElementById('eqtsad').innerHTML =`علم الارض`;
 }
-
+if (level === 'السادس الاعدادي' && sbranch === 'الفرع التطبيقي') {
+  document.getElementById('eqtsad').innerHTML = `اقتصاد`;
+}
 
 function serch() {
 let studentsNames  = userName.value.toLowerCase();
