@@ -477,9 +477,6 @@ body {
   grid-template-columns: repeat(8,1fr);
 }
 
-.students .container .search #table  div span {
-  font-size: 12px;
-}
 
 @media (max-width: 767px) {
   .students .container .search #table {
@@ -491,7 +488,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8,1fr);
     grid-gap: 15px;
-   
+    height: 200px;
   }
 }
 
