@@ -47,6 +47,7 @@ if (level === 'الخامس الاعدادي' && sbranch === 'الفرع الت�
 if (level === 'السادس الاعدادي' && sbranch === 'الفرع التطبيقي') {
   document.getElementById('eqtsad').innerHTML = `اقتصاد`;
 }
+}
 
 function serch() {
 let studentsNames  = userName.value.toLowerCase();
