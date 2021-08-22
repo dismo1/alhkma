@@ -488,7 +488,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8,1fr);
     grid-gap: 15px;
-    height: 200px;
+    height: 175px;
   }
 }
 
