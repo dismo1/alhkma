@@ -57,8 +57,6 @@ if (level.endsWith('الاعدادي')) {
 
 }
 
-}
-
 function serch() {
 let studentsNames  = userName.value.toLowerCase();
 let level = document.getElementById("educationalLevel").value;
