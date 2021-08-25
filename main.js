@@ -51,6 +51,10 @@ if (level === 'السادس الاعدادي' && sbranch === 'الفرع الت�
 
 if (level.endsWith('الاعدادي')) {
   document.getElementById('ejtma').style['display'] = 'none';
+} else {
+  document.getElementById('ejtma').style['display'] = 'block';
+}
+
 }
 
 }
