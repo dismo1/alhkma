@@ -22,10 +22,10 @@ function styleFn(us, ...grades) {
   document.getElementById('ar').innerHTML =`${grades[1]}`;
   document.getElementById('math').innerHTML =`${grades[2]}`;
   document.getElementById('en').innerHTML =`${grades[3]}`;
-  document.getElementById('ph').innerHTML =`${grades[4]}`;
-  document.getElementById('km').innerHTML =`${grades[5]}`;
-  document.getElementById('eqt').innerHTML =`${grades[6]}`;
-  document.getElementById('ejt').innerHTML= `${grades[7]}`
+  document.getElementById('eqt').innerHTML = `${grades[4]}`;
+  document.getElementById('ejt').innerHTML = `${grades[5]}`
+  document.getElementById('ph').innerHTML =`${grades[6]}`;
+  document.getElementById('km').innerHTML =`${grades[7]}`;
   
 }
 function level() {
