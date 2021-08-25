@@ -41,6 +41,17 @@ if (level === 'الرابع الاعدادي' || level.endsWith('متوسط')) {
 else {
   document.getElementById('secondaryBranch').style["display"] = 'block';
   }
+
+if (level === 'الثاني متوسط' || level === 'الاول متوسط') {
+  document.getElementById('phs').style['display'] = "none";
+  document.getElementById('kem').style['display'] = "none";
+  document.getElementById('eqtsad').innerHTML ="علوم";
+} else {
+  document.getElementById('phs').style['display'] = "block";
+  document.getElementById('kem').style['display'] = "block";
+  document.getElementById('eqtsad').innerHTML ="احياء";
+}
+
   
 if (level === 'الخامس الاعدادي' && sbranch === 'الفرع التطبيقي') {
   document.getElementById('eqtsad').innerHTML =`علم الارض`;
@@ -314,7 +325,27 @@ if (level === 'السادس الاعدادي') {
 
 
 
+//الاول والثاني متوسط
+/*
+switch (studentsNames.trim()) {
+  case '':
+    styleFn(userName.value, 98, 90, 89, 88, 95, 90, '---', '---')
+    break;
+  default:
+    document.getElementById('header').innerHTML = `عزيزي الطالب الاسم الذي قمت بكتابته <span style = 'color: red;'>"${userName.value}"</span> غير موجود يرجى التأكد من صحة الاسم`
+}
+*/
 
+//الثالث متوسط
+/*
+switch (studentsNames.trim()) {
+  case '':
+    styleFn(userName.value, 98, 90, 89, 88, 95, 90, 99, 10)
+    break;
+  default:
+    document.getElementById('header').innerHTML = `عزيزي الطالب الاسم الذي قمت بكتابته <span style = 'color: red;'>"${userName.value}"</span> غير موجود يرجى التأكد من صحة الاسم`
+}
+*/
 
 
 
