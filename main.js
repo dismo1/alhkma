@@ -25,6 +25,7 @@ function styleFn(us, ...grades) {
   document.getElementById('ph').innerHTML =`${grades[4]}`;
   document.getElementById('km').innerHTML =`${grades[5]}`;
   document.getElementById('eqt').innerHTML =`${grades[6]}`;
+  document.getElementById('ejt').innerHTML= `${grades[7]}`
   
 }
 function level() {
@@ -34,7 +35,7 @@ let bClass = document.getElementById("scientificClass").value;
 let sbranch = document.getElementById("secondaryBranch").value;
 
 
-if (level === 'الرابع الاعدادي') {
+if (level === 'الرابع الاعدادي' || level.endsWith('متوسط')) {
   document.getElementById('secondaryBranch').style["display"] = 'none';
 }
 else {
@@ -48,6 +49,10 @@ if (level === 'السادس الاعدادي' && sbranch === 'الفرع الت�
   document.getElementById('eqtsad').innerHTML = `اقتصاد`;
 }
 
+if (level.endsWith('الاعدادي')) {
+  document.getElementById('ejtma').style['display'] = 'none';
+}
+
 }
 
 function serch() {
@@ -57,7 +62,47 @@ let gend = document.getElementById("gend").value;
 let bClass = document.getElementById("scientificClass").value;
 let sbranch = document.getElementById("secondaryBranch").value;
 
-if (gend === 'بنين') {
+if (gend === 'ذكر') {
+  
+if (level === 'الاول متوسط') {
+   if (bClass === 'ألف') {
+    
+   }
+   if (bClass === 'باء') {
+  
+   }
+   if (bClass === 'جيم') {
+   }
+   if (bClass === 'دال') {
+     
+   }
+}
+if (level === 'الثاني متوسط') {
+   if (bClass === 'ألف') {
+      
+   }
+   if (bClass === 'باء') {
+  
+   }
+   if (bClass === 'جيم') {
+   }
+   if (bClass === 'دال') {
+     
+   }
+}
+if (level === 'الثالث متوسط') {
+   if (bClass === 'ألف') {
+      
+   }
+   if (bClass === 'باء') {
+  
+   }
+   if (bClass === 'جيم') {
+   }
+   if (bClass === 'دال') {
+     
+   }
+}
 
 if (level === 'الرابع الاعدادي') {
    if (bClass === 'ألف') {
@@ -128,13 +173,13 @@ if (level === 'السادس الاعدادي') {
   
    }
    if (bClass === 'جيم') {
-        switch (studentsNames.trim()) {
-          case 'محمد حسين':
-            styleFn(userName.value, 98, 90, 89, 88, 95, 90, 99)
-            break;
+      switch (studentsNames.trim()) {
+        case 'محمد حسين علي':
+          styleFn(userName.value, 98, 90, 89, 88, 95, 90, 99, '---')
+          break;
         default:
           document.getElementById('header').innerHTML = `عزيزي الطالب الاسم الذي قمت بكتابته "${userName.value}" غير موجود يرجى التأكد من صحة الاسم`
-        }
+      }
    }
    if (bClass === 'دال') {
   
@@ -143,7 +188,47 @@ if (level === 'السادس الاعدادي') {
   
 }
 }
-if (gend === 'بنات') {
+if (gend === 'انثى') {
+  
+if (level === 'الاول متوسط') {
+   if (bClass === 'ألف') {
+      
+   }
+   if (bClass === 'باء') {
+  
+   }
+   if (bClass === 'جيم') {
+   }
+   if (bClass === 'دال') {
+     
+   }
+}
+if (level === 'الثاني متوسط') {
+   if (bClass === 'ألف') {
+      
+   }
+   if (bClass === 'باء') {
+  
+   }
+   if (bClass === 'جيم') {
+   }
+   if (bClass === 'دال') {
+     
+   }
+}
+if (level === 'الثالث متوسط') {
+   if (bClass === 'ألف') {
+      
+   }
+   if (bClass === 'باء') {
+  
+   }
+   if (bClass === 'جيم') {
+   }
+   if (bClass === 'دال') {
+     
+   }
+}
 
 if (level === 'الرابع الاعدادي') {
    if (bClass === 'ألف') {
@@ -231,12 +316,23 @@ if (level === 'السادس الاعدادي') {
 
 
 
-
+//الاعدادية
 
 /*switch (studentsNames.trim()) {
   case '':
-    styleFn(userName.value, 98, 90, 89, 88, 95, 90, 99)
+    styleFn(userName.value, 98, 90, 89, 88, 95, 90, 99, '---')
     break;
   default:
-    document.getElementById('header').innerHTML = `عزيزي الطالب الاسم الذي قمت بكتابته "${userName.value}" غير موجود يرجى التأكد من صحة الاسم`
+    document.getElementById('header').innerHTML = `عزيزي الطالب الاسم الذي قمت بكتابته <span style = 'color: red;'>"${userName.value}"</span> غير موجود يرجى التأكد من صحة الاسم`
 }*/
+
+//المتوسطة 
+/*
+switch (studentsNames.trim()) {
+  case '':
+    styleFn(userName.value, 98, 90, 89, 88, 95, 90, 99, 10)
+    break;
+  default:
+    document.getElementById('header').innerHTML = `عزيزي الطالب الاسم الذي قمت بكتابته <span style = 'color: red;'>"${userName.value}"</span> غير موجود يرجى التأكد من صحة الاسم`
+}
+*/

@@ -474,7 +474,7 @@ body {
 
 .students .container .search #table  div {
   display: grid;
-  grid-template-columns: repeat(8,1fr);
+  grid-template-columns: repeat(9,1fr);
 }
 
 
@@ -486,7 +486,7 @@ body {
   .students .container .search #table div {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: repeat(9,1fr);
     grid-gap: 15px;
     height: 175px;
   }
@@ -517,14 +517,14 @@ body {
   grid-gap: 25px;
 }
 
-.footer ul li {
+.footer ul li a {
   color: #FFFFFF20;
   transition: var(--dtrans);
   font-size: 20px;
   transition-property: color;
 }
 
-.footer ul li:hover {
+.footer ul li a:hover {
   color: #FFFFFF;
 }
 /* End footer */
