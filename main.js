@@ -187,7 +187,7 @@ if (level === 'السادس الاعدادي') {
    }
    if (bClass === 'جيم') {
       switch (studentsNames.trim()) {
-        case 'محمد حسين علي':
+        case 'محمد حسين':
           styleFn(userName.value, 98, 90, 89, 88, 95, 90, 99, '---')
           break;
         default:
